@@ -2,7 +2,7 @@ import {ApiPromise, WsProvider} from '@polkadot/api'
 
 let api: ApiPromise
 (async () => {
-  const provider = new WsProvider('wss://testnet3.chainx.org')
+  const provider = new WsProvider('wss://mainnet.chainx.org')
   api = new ApiPromise(({provider}))
   api.on('connected', () => {
     console.log('connect wss')
